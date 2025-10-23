@@ -1,5 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
-:root{
-    background-color:none;
+:root {
+  background-color: none;
 }

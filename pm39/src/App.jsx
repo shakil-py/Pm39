@@ -1,10 +1,8 @@
-import './App.css'
-import Home from './component/home';
-import NavBar from './component/navbar';
+import "./App.css";
+import Home from "./component/home";
+import NavBar from "./component/navbar";
 
 function App() {
-  
-
   return (
     <>
       <div className="w-10/12 mx-auto bg-white">
@@ -16,7 +14,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
