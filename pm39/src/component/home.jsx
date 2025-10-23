@@ -1,3 +1,5 @@
+import Cards from "./cards";
+
 export default function Home() {
   return (
     <>
@@ -59,8 +61,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-5 flex items-center ">
-        <h1 className=" text-4xl text-black font-bold ">Catagory </h1>
+      <div className="my-5  ">
+        <h1 className=" text-center text-4xl text-black font-bold ">Catagory </h1>
+        <div className="">
+          <Cards></Cards>
+        </div>
       </div>
     </>
   );

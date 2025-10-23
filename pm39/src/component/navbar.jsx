@@ -9,10 +9,10 @@ export default function NavBar() {
         {/* button of nav */}
         <div className="flex items-center ">
           <ul className="flex items-center space-x-3 ">
-            <li className="bg-black px-2 mx-2 rounded-lg py-1 font-black  my-1">
+            <li className="outline-2 px-2 mx-2 rounded-lg py-1 font-black  my-1">
               <button>Home</button>
             </li>
-            <li className="bg-black px-2 mx-2 rounded-lg py-1 font-black  my-1">
+            <li className="outline-2 px-2 mx-2 rounded-lg py-1 font-black  my-1">
               <button>Products</button>
             </li>
           </ul>
