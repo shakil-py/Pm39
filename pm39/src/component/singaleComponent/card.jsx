@@ -1,5 +1,5 @@
 export default function Card(data) {
-  const { brand, phone_name, id, image } = data.data;
+  const {phone_name, image } = data.data;
   return (
     <>
       <div className="mx-auto card bg-gray-100 mb-4  w-10/12 shadow-lg">

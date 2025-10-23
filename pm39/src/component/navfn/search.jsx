@@ -4,8 +4,7 @@ export default function Search() {
   const [searchvalue, setSearchValue] = useState("");
   const handleSearchValue = (e) => {
     setSearchValue(e.target.value);
-    };
-    
+  };
 
   return (
     <div className="flex items-center border-black border-2 px-3 text-xl mr-3  rounded-full">
@@ -13,8 +12,8 @@ export default function Search() {
         type="search"
         className="text-black  outline-0  h-10  "
         placeholder="Search here"
-              value={searchvalue}
-              onChange={handleSearchValue}
+        value={searchvalue}
+        onChange={handleSearchValue}
       />
       <button>
         <i>

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import Card from "./singaleComponent/card";
+import Search from "./navfn/search";
 
 
 
 export default function Cards() {
-    
+    console.log(Search().searchValue)
   const [Phones, setphones] = useState([]);
 
   const loadePhone = async () => {

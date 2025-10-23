@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Cards from "./cards";
 import Search from "./navfn/search";
 
 export default function NavBar() {
