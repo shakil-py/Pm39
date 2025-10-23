@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
+import Card from "./singaleComponent/card";
 
 export default function Cards() {
-  const { phones, setphone } = useState([]);
-  const loadePhone = async () => {
+  const [Phones, setphones] = useState([]);
+  
+  const loadePhone = async (SearchValue) => {
     const Response = await fetch(
-      "https://openapi.programming-hero.com/api/phones?search=iphone"
+      "https://openapi.programming-hero.com/api/phones?search=a"
     );
-      const PhoneData = await Response.json();
-      
-    console.log(PhoneData);
-    setphone(PhoneData);
+    const PhoneData = await Response.json();
+
+    // console.log(PhoneData.data);
+    setphones(PhoneData.data);
   };
   useEffect(() => {
     loadePhone();
@@ -17,8 +19,10 @@ export default function Cards() {
 
   return (
     <>
-      <div className="">
-        <h1 className=""> Cards</h1>
+      <div className="grid grid-cols-4 mt-3">
+        {Phones.map((phone) => (
+          <Card data={phone}></Card>
+        ))}
       </div>
     </>
   );
