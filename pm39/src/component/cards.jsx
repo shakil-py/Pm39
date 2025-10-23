@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import Card from "./singaleComponent/card";
 
+
+
 export default function Cards() {
+    
   const [Phones, setphones] = useState([]);
-  
-  const loadePhone = async (SearchValue) => {
+
+  const loadePhone = async () => {
     const Response = await fetch(
-      "https://openapi.programming-hero.com/api/phones?search=a"
+      "https://openapi.programming-hero.com/api/phones?search=iphone"
     );
     const PhoneData = await Response.json();
 
