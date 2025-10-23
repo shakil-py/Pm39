@@ -39,6 +39,9 @@ export default function Home(){
     </div>
   </div>
 </div>
+<div className="my-5 flex items-center ">
+    <h1 className=" text-4xl text-black font-bold ">Catagory </h1>
+</div>
         
         
         </>
