@@ -1,4 +1,4 @@
-import Search from "./navfn/search";
+import Search from './cards'
 
 export default function NavBar() {
   
@@ -21,7 +21,7 @@ export default function NavBar() {
             </li>
           </ul>
           {/* search container */}
-          <Search ></Search>
+          <Search></Search>
         </div>
       </div>
     </>
