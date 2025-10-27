@@ -1,5 +1,4 @@
-import Search from './cards'
-
+import Search from './singaleComponent/search';
 export default function NavBar() {
   
   
