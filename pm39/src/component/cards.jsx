@@ -4,13 +4,13 @@ import Card from "./singaleComponent/card";
 
 function Cards() {
   const [Phones, setphones] = useState([]);
-  const loadePhone = async (Text="iphone") => {
+  const loadePhone = async () => {
     const Response = await fetch(
-      `https://openapi.programming-hero.com/api/phones?search=${Text}}`
+      `https://openapi.programming-hero.com/api/phones?search=iphone`
     );
     const PhoneData = await Response.json();
 
-    // console.log(PhoneData.data);
+    
     setphones(PhoneData.data);
   };
 
