@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import Card from "./singaleComponent/card";
-// import Search from "./../search";
 
 function Cards({ search }) {
   const [Phones, setphones] = useState([]);
   const loadePhone = async () => {
-    console.log(search, "---");
+    console.log(search=13, "");
     const Response = await fetch(
       `https://openapi.programming-hero.com/api/phones?search=${search}`
     );
