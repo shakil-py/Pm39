@@ -1,11 +1,7 @@
-import { useState } from "react";
-function Search() {
-
-  const [Searchvalue, setValue] = useState(" ");
-
+function Search({ search, setSearch }) {
   const handleSearchValue = (e) => {
-    setValue(e.target.value);
-  }; 
+    setSearch(e.target.value);
+  };
 
   return (
     <div className="flex items-center border-black border-2 px-3 text-xl mr-3  rounded-full">
@@ -13,10 +9,10 @@ function Search() {
         type="search"
         className="text-black  outline-0  h-10  "
         placeholder="Search here"
-        value={Searchvalue}
+        value={search}
         onChange={handleSearchValue}
       />
-      <button >
+      <button>
         <i>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,5 +28,5 @@ function Search() {
       </button>
     </div>
   );
-};
-export default Search
+}
+export default Search;

@@ -2,21 +2,22 @@ import { useEffect, useState } from "react";
 import Card from "./singaleComponent/card";
 // import Search from "./../search";
 
-function Cards() {
+function Cards({ search }) {
   const [Phones, setphones] = useState([]);
   const loadePhone = async () => {
+    console.log(search, "---");
     const Response = await fetch(
-      `https://openapi.programming-hero.com/api/phones?search=iphone`
+      `https://openapi.programming-hero.com/api/phones?search=${search}`
     );
     const PhoneData = await Response.json();
+    console.log(PhoneData.data, "comming from api");
 
-    
     setphones(PhoneData.data);
   };
 
   useEffect(() => {
     loadePhone();
-  }, []);
+  }, [search]);
 
   return (
     <>
@@ -29,5 +30,4 @@ function Cards() {
   );
 }
 
-
-export default (Cards);
+export default Cards;

@@ -1,7 +1,5 @@
-import Search from './singaleComponent/search';
-export default function NavBar() {
-  
-  
+import Search from "./singaleComponent/search";
+export default function NavBar({ search, setSearch }) {
   return (
     <>
       <div className="flex justify-between bg-blue-200 h-15  ">
@@ -20,7 +18,7 @@ export default function NavBar() {
             </li>
           </ul>
           {/* search container */}
-          <Search></Search>
+          <Search sesarch={search} setSearch={setSearch} />
         </div>
       </div>
     </>
